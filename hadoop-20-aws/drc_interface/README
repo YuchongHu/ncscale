@@ -1,0 +1,30 @@
+
+------------------------README----------------------------
+
+here is the interface for the Double Regenerating Code
+
+---------------------library infomation-------------------
+
+0. autoconf-2.69
+1. automake-1.14.1
+2. yasm-1.2.0
+
+above are needed to build isa-l 2.14.0
+3. isa-l 2.14.0
+
+----------------------------------------------------------
+
+0. this directory is independent from hadoop-20 and can 
+   make&run without build hadoop-20
+1. drc.hh define the interface in detail, and those 
+   functions will be called through JNI by hadoop
+2. only support the one node corrupt
+3. drc.cc to implement the interface
+4. tester.cc to test the interface
+
+to use:
+  make
+  ./tester
+
+to clean:
+  make clean

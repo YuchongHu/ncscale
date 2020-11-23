@@ -1,0 +1,10 @@
+<configuration>
+<policy name = "ncsgroup">
+<srcPath prefix="hdfs://192.168.60.242:9000/user/hadoop/raidTest"></srcPath>
+<property><name>targetReplication</name><value>1</value></property>
+<property><name>metaReplication</name><value>1</value></property>
+<property><name>modTimePeriod</name><value>0</value></property>
+<CodecId>drc</CodecId>
+</policy>
+</configuration>
+

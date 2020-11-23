@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property><name>hdfs.raid.min.filesize</name><value>2097152</value></property>
+<property><name>dfs.socket.timeout</name><value>5400000</value></property>
+<property><name>raid.blockfix.read.timeout</name><value>5400000</value></property>
+<property><name>raid.blockfix.write.timeout</name><value>5400000</value></property>
+<property><name>dfs.blockreport.intervalMsec</name><value>3</value></property>
+<property><name>raid.decoder.bufsize</name><value>67108864</value></property>
+<property><name>raid.blockfix.interval</name><value>5400000</value></property>
+<property><name>hdfs.raid.strip.size</name><value>67108864</value></property>
+<property><name>dfs.replication</name><value>1</value></property>
+<property><name>raid.blockfix.classname</name><value>org.apache.hadoop.raid.LocalBlockIntegrityMonitor</value></property>
+<property><name>raid.config.file</name><value>/home/hadoop/hadoop-20/conf/raid.xml</value></property>
+<property><name>raid.mod.time.period</name><value>0</value></property>
+<property><name>raid.policy.rescan.interval</name><value>1000000</value></property>
+<property><name>hdfs.raid.stripe.store.class</name><value>org.apache.hadoop.raid.LocalStripeStore</value></property>
+<property><name>hdfs.raid.local.stripe.dir</name><value>/home/hadoop/hadoop-20/stripeStore</value></property>
+<property><name>hdfs.raid.parity.initial.repl</name><value>1</value></property>
+<property><name>raid.statscollector.update.period</name><value>10000</value></property>
+<property><name>raid.classname</name><value>org.apache.hadoop.raid.LocalRaidNode</value></property>
+<property><name>hdfs.raid.user.dir.prefix</name><value>/user</value></property>
+<property><name>dfs.block.replicator.classname</name><value>org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyDrc</value></property>
+<property><name>dfs.safemode.threshold.pct</name><value>0</value></property>
+<property><name>dfs.f4.accepted.codecs</name><value>jerasure,drc</value></property>
+<property><name>dfs.block.size</name><value>67108864</value></property>
+<property><name>hdfs.raid.block.move.threads</name><value>1</value></property>
+<property><name>raid.encoder.parallelism</name><value>1</value></property>
+<property><name>raid.needrelayer</name><value>true</value></property>
+<property><name>raid.recover.parallel.num</name><value>4</value></property>
+<property><name>raid.recover.drc.parallel</name><value>4</value></property>
+<property><name>dfs.datanode.dns.interface</name><value>eth0</value></property>
+<property><name>raid.codecs.json</name><value>[{"id" : "drc","parity_dir" : "/drc","stripe_length" : 4,"parity_length" : 2,"group_num" : 6,"group_size" : 1,"drc_type" : 18,"new_node" : 2,"priority" : 100,"node_num":6,"erasure_code" : "org.apache.hadoop.raid.DRCCode","description" : "double regenerating code","simulate_block_fix": false,"dir_raid" : true}]</value></property>
+</configuration>
